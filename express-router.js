@@ -4,6 +4,9 @@
 var express = require('express');
 var app = express();
 var bird = require('./app/bird');
+var com = require('./app/comhere');
+
+app.use('/com',com);
 
 app.use('/bird', bird);
 
